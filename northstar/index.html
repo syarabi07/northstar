@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="theme-color" content="#f7f7f5"/>
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23d63a0a' d='M16 2.8 19.3 12.7 29.2 16 19.3 19.3 16 29.2 12.7 19.3 2.8 16 12.7 12.7 16 2.8Z'/%3E%3C/svg%3E"/>
+        <meta name="description" content="Bring live web intelligence into your products, agents and research workflows with Northstar."/>
+        <title>Northstar — Live web intelligence for AI teams</title>
+        <link rel="canonical" href="https://northstaratlas.pages.dev/"/>
+        <meta name="robots" content="index, follow"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:site_name" content="Northstar"/>
+        <meta property="og:url" content="https://northstaratlas.pages.dev/"/>
+        <meta property="og:title" content="Northstar — Live web intelligence for AI teams"/>
+        <meta property="og:description" content="Bring live web intelligence into your products, agents and research workflows with Northstar."/>
+        <meta property="og:image" content="https://northstaratlas.pages.dev/social-card.png"/>
+        <meta property="og:image:type" content="image/png"/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+        <meta property="og:image:alt" content="Northstar — live web intelligence for AI teams."/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Northstar — Live web intelligence for AI teams"/>
+        <meta name="twitter:description" content="Bring live web intelligence into your products, agents and research workflows with Northstar."/>
+        <meta name="twitter:image" content="https://northstaratlas.pages.dev/social-card.png"/>
+        <meta name="twitter:image:alt" content="Northstar — live web intelligence for AI teams."/>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Northstar",
+                "url": "https://northstaratlas.pages.dev/",
+                "description": "Bring live web intelligence into your products, agents and research workflows with Northstar."
+            }</script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body id="top">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="announcement-bar">
+            <span class="announcement-spark" aria-hidden="true">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <path fill="currentColor" d="M16 2.8 19.3 12.7 29.2 16 19.3 19.3 16 29.2 12.7 19.3 2.8 16 12.7 12.7 16 2.8Z"/>
+                </svg>
+            </span>
+            <span>Introducing Northstar Atlas — your team's live knowledge layer.</span>
+            <a href="#atlas" data-close-menu>
+                Explore Atlas <span aria-hidden="true">↗</span>
+            </a>
+            <button class="announcement-close" id="announcementClose" type="button" aria-label="Dismiss announcement">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m6 6 12 12M18 6 6 18"/>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+        <header class="site-header">
+            <div class="navbar" id="navbar">
+                <a class="brand" href="#top" aria-label="Northstar home" data-close-menu>
+                    <span class="brand-mark" aria-hidden="true">
+                        <svg aria-hidden="true" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2.8 19.3 12.7 29.2 16 19.3 19.3 16 29.2 12.7 19.3 2.8 16 12.7 12.7 16 2.8Z" fill="currentColor"/>
+                            <circle cx="16" cy="16" r="3.1" fill="#fff"/>
+                        </svg>
+                    </span>
+                    <span>NORTHSTAR</span>
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks megaMenu">
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+                    <button class="nav-trigger" type="button" data-menu="products" aria-controls="megaMenu" aria-expanded="false">
+                        Products <span class="chevron" aria-hidden="true"></span>
+                    </button>
+                    <button class="nav-trigger" type="button" data-menu="solutions" aria-controls="megaMenu" aria-expanded="false">
+                        Solutions <span class="chevron" aria-hidden="true"></span>
+                    </button>
+                    <button class="nav-trigger" type="button" data-menu="resources" aria-controls="megaMenu" aria-expanded="false">
+                        Resources <span class="chevron" aria-hidden="true"></span>
+                    </button>
+                    <button class="nav-trigger" type="button" data-menu="company" aria-controls="megaMenu" aria-expanded="false">
+                        Company <span class="chevron" aria-hidden="true"></span>
+                    </button>
+                    <a class="nav-link" href="#pricing" data-close-menu>Pricing</a>
+                    <a class="nav-link" href="#docs" data-close-menu>Docs</a>
+                    <a class="nav-cta" href="#login" data-close-menu>
+                        Log in <span aria-hidden="true">→</span>
+                    </a>
+                </nav>
+                <div class="nav-actions">
+                    <a class="login-link" href="#login" data-close-menu>Log in</a>
+                    <a class="button button-dark" href="#get-started" data-close-menu>
+                        Get started <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+                <section class="mega-menu" id="megaMenu" aria-label="Navigation menu" aria-hidden="true" inert>
+                    <div class="mobile-menu-controls">
+                        <div class="mobile-menu-tabs" role="group" aria-label="Choose a menu category">
+                            <button type="button" class="mobile-menu-tab is-current" data-menu-tab="products" aria-pressed="true">Products</button>
+                            <button type="button" class="mobile-menu-tab" data-menu-tab="solutions" aria-pressed="false">Solutions</button>
+                            <button type="button" class="mobile-menu-tab" data-menu-tab="resources" aria-pressed="false">Resources</button>
+                            <button type="button" class="mobile-menu-tab" data-menu-tab="company" aria-pressed="false">Company</button>
+                        </div>
+                    </div>
+                    <!-- PRODUCTS: dense endpoint + surfaces layout inspired by reference one -->
+                    <div class="mega-panel panel-products" data-panel="products">
+                        <div class="product-column endpoint-column">
+                            <div class="column-heading">Endpoints</div>
+                            <a class="endpoint-item" href="#search" data-close-menu>
+                                <span class="item-icon icon-orange">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="10.8" cy="10.8" r="6.4"/>
+                                        <path d="m15.6 15.6 4.1 4.1"/>
+                                    </svg>
+                                </span>
+                                <span class="item-copy">
+                                    <strong>Search</strong>
+                                    <small>Web search and page content</small>
+                                    <span class="chips">
+                                        <em>Web ↗</em>
+                                        <em>Developer index ↗</em>
+                                    </span>
+                                </span>
+                                <span class="item-arrow" aria-hidden="true">↗</span>
+                            </a>
+                            <a class="endpoint-item" href="#scrape" data-close-menu>
+                                <span class="item-icon icon-orange">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 3.5h8l4 4V20H6z"/>
+                                        <path d="M14 3.5v4h4M9 12h6M9 15.5h6"/>
+                                    </svg>
+                                </span>
+                                <span class="item-copy">
+                                    <strong>Scrape</strong>
+                                    <small>Turn any URL into clean data</small>
+                                    <span class="chips">
+                                        <em>URLs ↗</em>
+                                        <em>Parse documents ↗</em>
+                                    </span>
+                                </span>
+                                <span class="item-arrow" aria-hidden="true">↗</span>
+                            </a>
+                            <a class="endpoint-item" href="#crawl" data-close-menu>
+                                <span class="item-icon icon-orange">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="8"/>
+                                        <path d="M4.8 9h14.4M4.8 15h14.4M12 4c2.7 2.4 2.7 13.6 0 16M12 4c-2.7 2.4-2.7 13.6 0 16"/>
+                                    </svg>
+                                </span>
+                                <span class="item-copy">
+                                    <strong>Crawl</strong>
+                                    <small>Explore entire websites, automatically</small>
+                                </span>
+                                <span class="item-arrow" aria-hidden="true">↗</span>
+                            </a>
+                            <a class="endpoint-item" href="#monitor" data-close-menu>
+                                <span class="item-icon icon-orange">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                                        <path d="M4 17.5V6.5h16v11z"/>
+                                        <path d="m7 14 3-3 2.5 2.5L17 8.5"/>
+                                    </svg>
+                                </span>
+                                <span class="item-copy">
+                                    <strong>Monitor</strong>
+                                    <small>Get notified when the web changes</small>
+                                </span>
+                                <span class="item-arrow" aria-hidden="true">↗</span>
+                            </a>
+                            <a class="endpoint-item" href="#agent" data-close-menu>
+                                <span class="item-icon icon-orange">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8m7.2 7.2 2.8 2.8m0-12.8-2.8 2.8m-7.2 7.2-2.8 2.8"/>
+                                        <circle cx="12" cy="12" r="3.2"/>
+                                    </svg>
+                                </span>
+                                <span class="item-copy">
+                                    <strong>Agent</strong>
+                                    <small>Gather deeper data from the web</small>
+                                </span>
+                                <span class="item-arrow" aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                        <div class="product-column surface-column">
+                            <div class="column-heading">Surfaces</div>
+                            <a class="surface-item" href="#mcp" data-close-menu>
+                                <span class="surface-icon">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                                        <path d="m8 16 8-8M6 13l7-7a3 3 0 0 1 4 4l-7 7a3 3 0 0 1-4-4ZM10 20l8-8a3 3 0 0 0 0-4"/>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <strong>MCP</strong>
+                                    <small>Connect AI agents to the web</small>
+                                </span>
+                                <span class="item-arrow" aria-hidden="true">↗</span>
+                            </a>
+                            <a class="surface-item" href="#cli" data-close-menu>
+                                <span class="surface-icon">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                                        <path d="m5 7 5 5-5 5M13 17h6"/>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <strong>CLI</strong>
+                                    <small>Use Northstar from your terminal</small>
+                                </span>
+                                <span class="item-arrow" aria-hidden="true">↗</span>
+                            </a>
+                            <a class="surface-item" href="#api" data-close-menu>
+                                <span class="surface-icon">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                                        <rect x="4" y="4" width="16" height="16" rx="3"/>
+                                        <path d="M7 14h3l2-5 2 7 1.5-3H17"/>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <strong>API</strong>
+                                    <small>One API for your research workflows</small>
+                                </span>
+                                <span class="item-arrow" aria-hidden="true">↗</span>
+                            </a>
+                            <a class="surface-item" href="#sdks" data-close-menu>
+                                <span class="surface-icon">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                                        <path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <strong>SDKs</strong>
+                                    <small>Python, Node, Go and TypeScript</small>
+                                </span>
+                                <span class="item-arrow" aria-hidden="true">↗</span>
+                            </a>
+                            <a class="surface-item" href="#skills" data-close-menu>
+                                <span class="surface-icon">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 3.5h8l4 4V21H6zM14 3.5v4h4M9 12h6M9 15h6"/>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <strong>Workflow skills</strong>
+                                    <small>Drop-in skills for your agent flows</small>
+                                </span>
+                                <span class="item-arrow" aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                        <aside class="product-feature-column">
+                            <div class="column-heading">Featured</div>
+                            <a class="atlas-feature" href="#atlas" data-close-menu>
+                                <div class="feature-meta">
+                                    <span class="mini-label">
+                                        <span aria-hidden="true">✦</span>
+                                        Northstar Atlas
+                                    </span>
+                                    <span class="new-pill">New</span>
+                                </div>
+                                <span class="feature-open" aria-hidden="true">↗</span>
+                                <strong>The knowledge layer for ambitious teams.</strong>
+                                <div class="atlas-orbit" aria-hidden="true">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                            </a>
+                            <a class="case-feature" href="#case-study" data-close-menu>
+                                <span class="soft-pill">Customer story</span>
+                                <div class="case-brand" aria-hidden="true">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <strong>How modern teams turn web data into decisions</strong>
+                                <span class="case-link">
+                                    Read customer story <span aria-hidden="true">→</span>
+                                </span>
+                            </a>
+                            <a class="column-footer" href="#customers" data-close-menu>
+                                <span aria-hidden="true">→</span>
+                                <span>
+                                    <strong>Customer stories</strong>
+                                    <small>See what teams build with Northstar</small>
+                                </span>
+                            </a>
+                        </aside>
+                    </div>
+                    <!-- SOLUTIONS: selectable sidebar inspired by Giga reference -->
+                    <div class="mega-panel panel-solutions" data-panel="solutions">
+                        <div class="solution-sidebar">
+                            <div class="column-heading">Solutions</div>
+                            <button class="solution-choice is-selected" type="button" data-solution="infrastructure" aria-pressed="true">
+                                <span class="solution-choice-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/>
+                                        <rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/>
+                                        <rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/>
+                                        <rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/>
+                                    </svg>
+                                </span>
+                                AI infrastructure
+                                <span class="choice-arrow" aria-hidden="true">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                                        <path d="m9 5 7 7-7 7"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="solution-choice" type="button" data-solution="research" aria-pressed="false">
+                                <span class="solution-choice-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <circle cx="10.8" cy="10.8" r="6.4"/>
+                                        <path d="m15.6 15.6 4.1 4.1"/>
+                                    </svg>
+                                </span>
+                                Research teams
+                                <span class="choice-arrow" aria-hidden="true">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                                        <path d="m9 5 7 7-7 7"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="solution-choice" type="button" data-solution="support" aria-pressed="false">
+                                <span class="solution-choice-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M5 5.5h14v10H11l-4.5 3.5v-3.5H5z"/>
+                                    </svg>
+                                </span>
+                                Customer support
+                                <span class="choice-arrow" aria-hidden="true">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                                        <path d="m9 5 7 7-7 7"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="solution-choice" type="button" data-solution="engineering" aria-pressed="false">
+                                <span class="solution-choice-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="m8 7-5 5 5 5M16 7l5 5-5 5"/>
+                                    </svg>
+                                </span>
+                                Engineering
+                                <span class="choice-arrow" aria-hidden="true">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                                        <path d="m9 5 7 7-7 7"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="solution-content" aria-live="polite">
+                            <div class="solution-detail is-active" data-solution-detail="infrastructure" aria-hidden="false">
+                                <div class="solution-kicker">BUILT FOR SCALE</div>
+                                <h3>AI infrastructure</h3>
+                                <p>Give every model and agent reliable access to current, useful knowledge.</p>
+                                <a class="solution-product" href="#atlas" data-close-menu>
+                                    <span aria-hidden="true" class="solution-thumb thumb-blue">
+                                        <span class="thumb-grid"></span>
+                                    </span>
+                                    <span>
+                                        <strong>Northstar Atlas</strong>
+                                        <small>A searchable knowledge layer for AI teams</small>
+                                    </span>
+                                    <span class="item-arrow" aria-hidden="true">↗</span>
+                                </a>
+                                <a class="solution-product" href="#api" data-close-menu>
+                                    <span aria-hidden="true" class="solution-thumb thumb-dark">
+                                        <span class="thumb-stack"></span>
+                                    </span>
+                                    <span>
+                                        <strong>Web intelligence API</strong>
+                                        <small>Ground model answers in real sources</small>
+                                    </span>
+                                    <span class="item-arrow" aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                            <div class="solution-detail" data-solution-detail="research" aria-hidden="true">
+                                <div class="solution-kicker">MOVE FROM QUESTIONS TO SIGNAL</div>
+                                <h3>Research teams</h3>
+                                <p>Find relevant sources, compare the market, and turn hours of research into clear insights.</p>
+                                <a class="solution-product" href="#search" data-close-menu>
+                                    <span aria-hidden="true" class="solution-thumb thumb-violet">
+                                        <span class="thumb-rings"></span>
+                                    </span>
+                                    <span>
+                                        <strong>Discovery search</strong>
+                                        <small>Surface high-signal sources faster</small>
+                                    </span>
+                                    <span class="item-arrow" aria-hidden="true">↗</span>
+                                </a>
+                                <a class="solution-product" href="#monitor" data-close-menu>
+                                    <span aria-hidden="true" class="solution-thumb thumb-peach">
+                                        <span class="thumb-bars"></span>
+                                    </span>
+                                    <span>
+                                        <strong>Market monitor</strong>
+                                        <small>Track competitor and category changes</small>
+                                    </span>
+                                    <span class="item-arrow" aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                            <div class="solution-detail" data-solution-detail="support" aria-hidden="true">
+                                <div class="solution-kicker">BETTER ANSWERS, LESS REPETITION</div>
+                                <h3>Customer support</h3>
+                                <p>Help support agents find accurate answers across product docs, help centers and release notes.</p>
+                                <a class="solution-product" href="#crawl" data-close-menu>
+                                    <span aria-hidden="true" class="solution-thumb thumb-mint">
+                                        <span class="thumb-pages"></span>
+                                    </span>
+                                    <span>
+                                        <strong>Help center sync</strong>
+                                        <small>Keep answers fresh as your docs change</small>
+                                    </span>
+                                    <span class="item-arrow" aria-hidden="true">↗</span>
+                                </a>
+                                <a class="solution-product" href="#mcp" data-close-menu>
+                                    <span aria-hidden="true" class="solution-thumb thumb-dark">
+                                        <span class="thumb-spark"></span>
+                                    </span>
+                                    <span>
+                                        <strong>Agent connections</strong>
+                                        <small>Bring web context into your workflows</small>
+                                    </span>
+                                    <span class="item-arrow" aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                            <div class="solution-detail" data-solution-detail="engineering" aria-hidden="true">
+                                <div class="solution-kicker">BUILT FOR DEVELOPERS</div>
+                                <h3>Engineering</h3>
+                                <p>Ship web-connected products with predictable APIs, clean output and tooling your team already uses.</p>
+                                <a class="solution-product" href="#api" data-close-menu>
+                                    <span aria-hidden="true" class="solution-thumb thumb-dark">
+                                        <span class="thumb-code">&lt;/ &gt;</span>
+                                    </span>
+                                    <span>
+                                        <strong>Developer platform</strong>
+                                        <small>Simple primitives, designed to compose</small>
+                                    </span>
+                                    <span class="item-arrow" aria-hidden="true">↗</span>
+                                </a>
+                                <a class="solution-product" href="#sdks" data-close-menu>
+                                    <span aria-hidden="true" class="solution-thumb thumb-blue">
+                                        <span class="thumb-grid"></span>
+                                    </span>
+                                    <span>
+                                        <strong>SDKs & tools</strong>
+                                        <small>Start with your preferred language</small>
+                                    </span>
+                                    <span class="item-arrow" aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                        <aside class="solution-cta">
+                            <div class="cta-art" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="cta-eyebrow">LET'S BUILD</span>
+                            <h3>Make your next idea real.</h3>
+                            <p>Talk with our team about the right setup for your use case.</p>
+                            <a class="button button-light" href="#contact" data-close-menu>
+                                Talk to an expert <span aria-hidden="true">↗</span>
+                            </a>
+                            <div class="cta-bottom">Practical guidance. No pressure.</div>
+                        </aside>
+                    </div>
+                    <!-- RESOURCES: resource center + explore links + updates inspired by Tabs -->
+                    <div class="mega-panel panel-resources" data-panel="resources">
+                        <a class="resource-center-card" href="#resource-center" data-close-menu>
+                            <div class="resource-art" aria-hidden="true">
+                                <span class="resource-art-tag">NORTHSTAR / FIELD NOTES</span>
+                                <div class="resource-art-glow"></div>
+                                <div class="resource-cube cube-back"></div>
+                                <div class="resource-cube cube-mid"></div>
+                                <div class="resource-cube cube-front"></div>
+                                <span class="resource-art-spark spark-one">✦</span>
+                                <span class="resource-art-spark spark-two">✳</span>
+                            </div>
+                            <strong>Resource center</strong>
+                            <p>Ideas and practical guides for building with better context.</p>
+                            <span class="inline-link">
+                                <span class="round-arrow" aria-hidden="true">›</span>
+                                Explore all resources <span class="arrow-tail" aria-hidden="true">↗</span>
+                            </span>
+                        </a>
+                        <div class="resource-explore">
+                            <div class="column-heading">Explore</div>
+                            <a class="resource-link" href="#webinars" data-close-menu>
+                                <strong>Webinars</strong>
+                                <small>Live sessions with builders and experts</small>
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a class="resource-link" href="#blog" data-close-menu>
+                                <strong>Blog</strong>
+                                <small>Product thinking, ideas and company news</small>
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a class="resource-link" href="#videos" data-close-menu>
+                                <strong>Videos</strong>
+                                <small>Watch Northstar in action</small>
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a class="resource-link" href="#guides" data-close-menu>
+                                <strong>Guides</strong>
+                                <small>Step-by-step advice for your team</small>
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a class="resource-link" href="#community" data-close-menu>
+                                <strong>Community</strong>
+                                <small>Learn alongside other builders</small>
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                        <div class="resource-updates">
+                            <a class="update-card update-cyan" href="#changelog" data-close-menu>
+                                <span class="update-dots" aria-hidden="true"></span>
+                                <strong>Product updates</strong>
+                                <small>The latest improvements from Northstar</small>
+                                <span class="update-action">
+                                    <span aria-hidden="true">›</span>
+                                    Read the changelog
+                                </span>
+                            </a>
+                            <a class="update-card update-navy" href="#release-notes" data-close-menu>
+                                <span class="update-dots" aria-hidden="true"></span>
+                                <strong>Release notes</strong>
+                                <small>What's new, fixed and improved</small>
+                                <span class="update-action">
+                                    <span aria-hidden="true">›</span>
+                                    View release notes
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- COMPANY: editorial / resource style inspired by Voiceflow -->
+                    <div class="mega-panel panel-company" data-panel="company">
+                        <div class="company-feature-col">
+                            <div class="column-heading">Featured</div>
+                            <a class="editorial-feature" href="#story" data-close-menu>
+                                <div class="editorial-art" aria-hidden="true">
+                                    <span class="editorial-art-label">NORTHSTAR / 2026</span>
+                                    <div class="editorial-sun"></div>
+                                    <div class="editorial-mountain mountain-one"></div>
+                                    <div class="editorial-mountain mountain-two"></div>
+                                    <div class="award-badge">
+                                        <small>BUILT FOR</small>
+                                        <strong>
+                                            WHAT'S<br/>NEXT
+                                        </strong>
+                                        <i></i>
+                                    </div>
+                                </div>
+                                <strong>Building a more useful internet for the next generation of AI.</strong>
+                                <span class="inline-link">
+                                    Read our story <span class="arrow-tail" aria-hidden="true">→</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="company-read-col">
+                            <div class="column-heading">Read</div>
+                            <a class="company-reading" href="#about" data-close-menu>
+                                <span class="reading-thumb thumb-paper">
+                                    <span class="paper-lines"></span>
+                                </span>
+                                <span>
+                                    <strong>About Northstar</strong>
+                                    <small>Our mission, team and principles</small>
+                                    <em>
+                                        Meet us <span aria-hidden="true">→</span>
+                                    </em>
+                                </span>
+                            </a>
+                            <a class="company-reading" href="#careers" data-close-menu>
+                                <span class="reading-thumb thumb-lilac">
+                                    <span class="people-shapes">
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                    </span>
+                                </span>
+                                <span>
+                                    <strong>Careers</strong>
+                                    <small>Do meaningful work with kind people</small>
+                                    <em>
+                                        See open roles <span aria-hidden="true">→</span>
+                                    </em>
+                                </span>
+                            </a>
+                            <a class="company-reading" href="#press" data-close-menu>
+                                <span class="reading-thumb thumb-coral">
+                                    <span class="press-spark">✳</span>
+                                </span>
+                                <span>
+                                    <strong>Press & media</strong>
+                                    <small>News, brand assets and announcements</small>
+                                    <em>
+                                        Press kit <span aria-hidden="true">→</span>
+                                    </em>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="company-links-col">
+                            <div class="column-heading">Connect</div>
+                            <a href="#contact" data-close-menu>
+                                <span aria-hidden="true" class="social-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M4 6.5h16v11H4z"/>
+                                        <path d="m4.5 7 7.5 6 7.5-6"/>
+                                    </svg>
+                                </span>
+                                Contact <span aria-hidden="true">↗</span>
+                            </a>
+                            <a href="#events" data-close-menu>
+                                <span aria-hidden="true" class="social-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <rect x="4" y="5.5" width="16" height="14" rx="2"/>
+                                        <path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/>
+                                    </svg>
+                                </span>
+                                Events <span aria-hidden="true">↗</span>
+                            </a>
+                            <a href="#linkedin" data-close-menu>
+                                <span aria-hidden="true" class="social-icon">in</span>
+                                LinkedIn <span aria-hidden="true">↗</span>
+                            </a>
+                            <a href="#github" data-close-menu>
+                                <span aria-hidden="true" class="social-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <circle cx="7" cy="6" r="2"/>
+                                        <circle cx="7" cy="18" r="2"/>
+                                        <circle cx="17" cy="9" r="2"/>
+                                        <path d="M7 8v8M17 11c0 2.5-2 3.5-7.5 5"/>
+                                    </svg>
+                                </span>
+                                GitHub <span aria-hidden="true">↗</span>
+                            </a>
+                            <a href="#status" data-close-menu>
+                                <span aria-hidden="true" class="social-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M3.5 12h4l2.5-6 4 12 2.5-6h4"/>
+                                    </svg>
+                                </span>
+                                System status <span aria-hidden="true">↗</span>
+                            </a>
+                            <div class="company-note">
+                                <span class="status-light"></span>
+                                <span>
+                                    <strong>All systems operational</strong>
+                                    <small>Last checked just now</small>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <main id="main-content" tabindex="-1">
+            <section class="hero" id="atlas">
+                <div class="hero-grid" aria-hidden="true"></div>
+                <div class="hero-content">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        WEB INTELLIGENCE FOR WHAT'S NEXT
+                    </div>
+                    <h1>
+                        Build with the<br/>
+                        <span>whole picture.</span>
+                    </h1>
+                    <p>Bring live web knowledge into your products, agents and workflows — without the busywork.</p>
+                    <div class="hero-actions">
+                        <a class="button button-bright" href="#get-started" data-close-menu>
+                            Start building <span aria-hidden="true">↗</span>
+                        </a>
+                        <a class="text-cta" href="#docs" data-close-menu>
+                            <span class="text-cta-label">Explore the docs</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                    <div class="hero-proof">
+                        <div class="avatar-stack" aria-hidden="true">
+                            <span>J</span>
+                            <span>M</span>
+                            <span>A</span>
+                            <span>+</span>
+                        </div>
+                        <span>
+                            <strong>Built for teams that build.</strong>
+                            <small>From first prototype to production.</small>
+                        </span>
+                    </div>
+                </div>
+                <div class="hero-visual" role="group" aria-label="Connected web knowledge illustration">
+                    <div class="visual-halo halo-one"></div>
+                    <div class="visual-halo halo-two"></div>
+                    <div class="visual-orbit orbit-one">
+                        <span class="orbit-particle" aria-hidden="true"></span>
+                    </div>
+                    <div class="visual-orbit orbit-two">
+                        <span class="orbit-particle" aria-hidden="true"></span>
+                    </div>
+                    <div class="float-card float-card-top">
+                        <span class="float-icon icon-lime" aria-hidden="true">✦</span>
+                        <span>
+                            <strong>Live context</strong>
+                            <small>Updated seconds ago</small>
+                        </span>
+                        <span class="live-dot" aria-hidden="true"></span>
+                    </div>
+                    <div class="knowledge-core">
+                        <div class="core-dial" aria-hidden="true">
+                            <svg aria-hidden="true" class="dial" viewBox="0 0 100 100" fill="none">
+                                <circle class="dial-edge" cx="50" cy="50" r="48.5"/>
+                                <circle class="dial-ticks" cx="50" cy="50" r="42" transform="rotate(-90 50 50)"/>
+                                <circle class="dial-north" cx="50" cy="50" r="42" transform="rotate(-91.1 50 50)"/>
+                            </svg>
+                            <div class="core-star">
+                                <svg aria-hidden="true" viewBox="0 0 32 32">
+                                    <path fill="currentColor" d="M16 2.8 19.3 12.7 29.2 16 19.3 19.3 16 29.2 12.7 19.3 2.8 16 12.7 12.7 16 2.8Z"/>
+                                    <circle cx="16" cy="16" r="3.1"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="core-label">Atlas</span>
+                    </div>
+                    <div class="float-card float-card-left">
+                        <span class="source-icon" aria-hidden="true">⌕</span>
+                        <span>
+                            <strong>2,481 sources</strong>
+                            <small>Indexed and connected</small>
+                        </span>
+                    </div>
+                    <div class="float-card float-card-right">
+                        <span class="check-icon" aria-hidden="true">✓</span>
+                        <span>
+                            <strong>Answer grounded</strong>
+                            <small>4 verified citations</small>
+                        </span>
+                    </div>
+                    <div class="visual-caption">Your web, in context</div>
+                </div>
+                <div class="hero-footnote">
+                    <span>Platform</span>
+                    <span>Clarity over noise. Context over guesswork.</span>
+                    <span>Scroll to explore ↓</span>
+                </div>
+            </section>
+            <section class="trust-strip" aria-label="Platform capabilities">
+                <span>Made for your stack</span>
+                <div class="trust-item-agent">
+                    <i aria-hidden="true">✳</i>
+                    Agent-ready
+                </div>
+                <div class="trust-item-developer">
+                    <i aria-hidden="true">⌘</i>
+                    Developer-first
+                </div>
+                <div class="trust-item-scale">
+                    <i aria-hidden="true">↗</i>
+                    Built to scale
+                </div>
+                <div class="trust-item-source">
+                    <i aria-hidden="true">◈</i>
+                    Source-grounded
+                </div>
+            </section>
+            <section class="below-section" id="pricing">
+                <div class="below-heading">
+                    <span class="eyebrow eyebrow-dark">ONE PLATFORM, MANY POSSIBILITIES</span>
+                    <h2>
+                        Start with a question.<br/>
+                        <span>Leave with clarity.</span>
+                    </h2>
+                    <p>Explore the building blocks behind better research, better answers, and more capable software.</p>
+                </div>
+                <div class="capability-grid">
+                    <article class="capability-card">
+                        <div class="capability-art art-search" aria-hidden="true">
+                            <span class="search-ring"></span>
+                            <span class="art-star">✦</span>
+                        </div>
+                        <h3>Find what matters.</h3>
+                        <p>Search the open web, surface useful sources and cut through the noise.</p>
+                        <a href="#search" data-close-menu>
+                            Explore search <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+                    <article class="capability-card">
+                        <div class="capability-art art-data" aria-hidden="true">
+                            <span class="data-layer layer-a"></span>
+                            <span class="data-layer layer-b"></span>
+                            <span class="data-layer layer-c"></span>
+                        </div>
+                        <h3>Make data useful.</h3>
+                        <p>Turn messy web pages into structured information your apps can use.</p>
+                        <a href="#scrape" data-close-menu>
+                            Explore extraction <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+                    <article class="capability-card">
+                        <div class="capability-art art-connect" aria-hidden="true">
+                            <span class="connect-node node-a"></span>
+                            <span class="connect-node node-b"></span>
+                            <span class="connect-node node-c"></span>
+                            <span class="connect-line line-a"></span>
+                            <span class="connect-line line-b"></span>
+                        </div>
+                        <h3>Connect the dots.</h3>
+                        <p>Bring live knowledge to your AI agents and everyday workflows.</p>
+                        <a href="#mcp" data-close-menu>
+                            Explore connections <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <a class="brand brand-footer" href="#top">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg aria-hidden="true" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 2.8 19.3 12.7 29.2 16 19.3 19.3 16 29.2 12.7 19.3 2.8 16 12.7 12.7 16 2.8Z" fill="currentColor"/>
+                        <circle cx="16" cy="16" r="3.1" fill="#fff"/>
+                    </svg>
+                </span>
+                <span>NORTHSTAR</span>
+            </a>
+            <span>Live knowledge for a world in motion.</span>
+            <span>© 2026 Northstar Labs</span>
+        </footer>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        <script src="script.js" defer></script>
+        <script src="hero-fx.js" defer></script>
+        <script src="hero-orbit.js" defer></script>
+    </body>
+</html>
